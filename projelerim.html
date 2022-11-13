@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<head>
+  <script>
+
+    window.onload = (event) => {
+      giris()
+    };
+
+    function giris() {
+      var password;
+      var pass1 = "a";
+      password = prompt('Sayfayi görebilmek icin lütfen sifreyi giriniz', '');
+      if (password == pass1) {
+        alert('Sifreyi dogru girdiniz !!');
+      } else {
+        window.location = "";
+      }
+    }
+
+    function hesapla() {
+      var vize = document.getElementById("vize").value;
+      var final = document.getElementById("final").value;
+      var vizeNotu = Number(vize);
+      var finalNotu = Number(final);
+      var ortalama = vizeNotu * 0.4 + finalNotu * 0.6;
+      if (ortalama >= 60 && ortalama <= 100) document.getElementById("sonuc").innerHTML = "Ortalama : " + ortalama + " => GEÇTİ";
+      else document.getElementById("sonuc").innerHTML = "Ortalama : " + ortalama + " => KALDI";
+    }
+    var hesaplaBtn = document.getElementById("hesapla");
+    hesaplaBtn.onclick = hesapla;
+
+    function basvuru() {
+      let ad = document.getElementById("form_ad").value;
+      console.log(ad)
+      console.log("kod buraya")
+    }
+  </script>
+  <title>PROJELERİM</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<center>
+  <h1> ZEYNEP GÖKTEKİN</h1>
+</center>
+</h1>
+<center>
+  <h1>
+    <a href="https://www.">https://www.aksaray.edu.tr/</a>
+</center>
+</h1>
+<h1>
+  <div align="center">
+    <img src="okul.jpg"
+</h1>
+<center>
+  <adress> Bahçesaray Mahallesi Necmettin Erbakan Bulvarı, Aksaray Ünv. Kampüs Yolu, 68100 Aksaray
+</center>
+</adress>
+<h3> <a href="https://www.trendyol.com/"> 1) Meyve</a></h3>
+</a>
+<ol type="a">
+  <li>elma</li>
+  <li>armut</li>
+</ol>
+<h3> <a href="https://www.trendyol.com/"> 2) Sebze </a></h3>
+<ol type="b">
+  <li>domates</li>
+  <li>salatalık</li>
+  <center>
+    <table border="1">
+      <style>
+          table,
+          td,
+          th {
+              border: 2px solid rgb(0, 0, 0);
+          }
+
+          th {
+              background-color: rgb(0, 139, 139);
+              color: rgb(255, 255, 255);
+          }
+      </style>
+      <thead>
+      <tr style="font-family: Arial;" align="center">
+        <th style="width: 80px;">Öğrenci No</th>
+        <th style="width: 100px;">Ad</th>
+        <th style="width: 80px;">Soyad</th>
+        <th style="width: 80px;">Vize</th>
+        <th style="width: 80px;">Final</th>
+        <th style="width: 60px;">Ortalama</th>
+        <th style="width: 60px;">sonuç</th>
+        <th style="width: 80px;">Hesapla</th>
+      </tr>
+      </thead>
+      <tbody style="font-family: Arial;" align="center">
+      <tr>
+        <td>
+          <input type="number" name="no" id="no3" required placeholder="Okul No giriniz">
+        </td>
+        <td>
+          <input type="text" name="ad" id="ad3" required placeholder="Adınızı Girin">
+        </td>
+        <td>
+          <input type="text" name="soyad" id="soyad3" required placeholder="Soyadınızı Girin">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="vize">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="final">
+        </td>
+        <td>
+          <output style="font-size: 70%;">
+            <div style="width: 160px;" id="sonuc" style="font-size: larger;"></div>
+          </output>
+        </td>
+        <td>
+          <button style="background: darkcyan;color:white;" id="hesapla">Hesapla</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" name="no" id="no3" required placeholder="Okul No giriniz">
+        </td>
+        <td>
+          <input type="text" name="ad" id="ad3" required placeholder="Adınızı Girin">
+        </td>
+        <td>
+          <input type="text" name="soyad" id="soyad3" required placeholder="Soyadınızı Girin">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="vize1">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="final1">
+        </td>
+        <td>
+          <output style="font-size: 70%;">
+            <div style="width: 160px;" id="sonuc1" style="font-size: larger;"></div>
+          </output>
+        </td>
+        <td>
+          <button style="background: darkcyan;color:white;" id="hesapla1">Hesapla</button>
+        </td>
+        <script>
+          function hesapla1() {
+            var vize1 = document.getElementById("vize1").value;
+            var final1 = document.getElementById("final1").value;
+            var vizeNotu1 = Number(vize1);
+            var finalNotu1 = Number(final1);
+            var ortalama1 = vizeNotu1 * 0.4 + finalNotu1 * 0.6;
+            if (ortalama1 >= 60 && ortalama1 <= 100) document.getElementById("sonuc1").innerHTML = "Ortalama : " + ortalama1 + " => GEÇTİ";
+            else document.getElementById("sonuc1").innerHTML = "Ortalama : " + ortalama1 + " => KALDI";
+          }
+          var hesaplaBtn1 = document.getElementById("hesapla1");
+          hesaplaBtn1.onclick = hesapla1;
+        </script>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" name="no" id="no3" required placeholder="Okul No giriniz">
+        </td>
+        <td>
+          <input type="text" name="ad" id="ad3" required placeholder="Adınızı Girin">
+        </td>
+        <td>
+          <input type="text" name="soyad" id="soyad3" required placeholder="Soyadınızı Girin">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="vize2">
+        </td>
+        <td>
+          <input style="width: 50px;" placeholder="not.." type="number" id="final2">
+        </td>
+        <td>
+          <output style="font-size: 70%;">
+            <div style="width: 160px;" id="sonuc2" style="font-size: larger;"></div>
+          </output>
+        </td>
+        <td>
+          <button style="background: darkcyan;color:white;" id="hesapla2">Hesapla</button>
+        </td>
+        <script>
+          function hesapla2() {
+            var vize2 = document.getElementById("vize2").value;
+            var final2 = document.getElementById("final2").value;
+            var vizeNotu2 = Number(vize2);
+            var finalNotu2 = Number(final2);
+            var ortalama2 = vizeNotu2 * 0.4 + finalNotu2 * 0.6;
+            if (ortalama2 >= 60 && ortalama2 <= 100) document.getElementById("sonuc2").innerHTML = "Ortalama : " + ortalama2 + " => GEÇTİ";
+            else document.getElementById("sonuc2").innerHTML = "Ortalama : " + ortalama2 + " => KALDI";
+          }
+          var hesaplaBtn2 = document.getElementById("hesapla2");
+          hesaplaBtn2.onclick = hesapla2;
+        </script>
+      </tr>
+      </tbody>
+    </table>
+  </center>
+</ol>
+<form>
+  <table border="1" align="center" cellpadding="3">
+    <tr>
+      <td colspan="2" align="center">
+        <style>
+          #sayfa{
+            width: 600px;
+            margin:auto;
+            background: #b5c8da;
+            padding:20px;
+            border-radius: 5px;
+          }
+          label{
+            display:block;
+            margin-top:5px;
+            border: none;
+          }
+          input{
+            width: 200px;
+            height: 25px;
+            font-size:1.2em;
+            border: none;
+          }
+          textarea{
+              border: none;
+          }
+        
+          input, label, textarea:focus{
+              outline: 0;
+          }
+          button{
+            border:none;
+            display:block;
+            margin-top:5px;
+            width: 204px;
+            height: 50px;
+            text-align: center;
+            font-size:1.2em;
+          }
+          td,th{
+            border:1px solid rgb(15, 15, 15);
+            border-spacing: 0px;
+            margin: 0px;
+          }
+          #ekle{
+              border-radius: 5px;
+              background-color: #000000;
+              color: rgba(243, 237, 237, 0.788);
+          }
+        </style>
+        
+        
+        </head>
+        <body>
+        <div id="sayfa">
+          <form>
+            <label><font face="Blackoak Std Siyah"><b></b>Ad :</b></font></label>   <input type="text"  id="ad">
+            <label><font face="Blackoak Std Siyah"><b></b>Soyad :</b></font></label>   <input type="text"  id="soyad">
+        
+              <label><font face="Blackoak Std Siyah"><b></b>Yaş :</b></font></label>   <input type="number"  id="yas">
+              <label>
+              
+                  <font face="Blackoak Std Siyah"><b></b>Medeni Hal :</b></font></label>   
+                  <select name="medenihal" id="medenihal">
+                  <option value="0">------</option>
+                  <option value="Evli">Evli</option>
+                  <option value="Bekar">Bekar</option>
+                  </select>
+              </label>
+            </form>
+          <label>
+              
+              <font face="Blackoak Std Siyah"><b></b>Yaşadığınız İl :</b></font></label>   
+              <select name="Sehir" id="il">
+              <option value="0">------</option>
+              <option value="Adana">Adana</option>
+              <option value="Adıyaman">Adıyaman</option>
+              <option value="Afyonkarahisar">Afyonkarahisar</option>
+              <option value="Ağrı">Ağrı</option>
+              <option value="Amasya">Amasya</option>
+              <option value="Ankara">Ankara</option>
+              <option value="Antalya">Antalya</option>
+              <option value="Artvin">Artvin</option>
+              <option value="Aydın">Aydın</option>
+              <option value="Balıkesir">Balıkesir</option>
+              <option value="Bilecik">Bilecik</option>
+              <option value="Bingöl">Bingöl</option>
+              <option value="Bitlis">Bitlis</option>
+              <option value="Bolu">Bolu</option>
+              <option value="Burdur">Burdur</option>
+              <option value="Bursa">Bursa</option>
+              <option value="Çanakkale">Çanakkale</option>
+              <option value="Çankırı">Çankırı</option>
+              <option value="Çorum">Çorum</option>
+              <option value="Denizli">Denizli</option>
+              <option value="Diyarbakır">Diyarbakır</option>
+              <option value="Edirne">Edirne</option>
+              <option value="Elazığ">Elazığ</option>
+              <option value="Erzincan">Erzincan</option>
+              <option value="Erzurum">Erzurum</option>
+              <option value="Eskişehir">Eskişehir</option>
+              <option value="Gaziantep">Gaziantep</option>
+              <option value="Giresun">Giresun</option>
+              <option value="Gümüşhane">Gümüşhane</option>
+              <option value="Hakkâri">Hakkâri</option>
+              <option value="Hatay">Hatay</option>
+              <option value="Isparta">Isparta</option>
+              <option value="Mersin">Mersin</option>
+              <option value="İstanbul">İstanbul</option>
+              <option value="İzmir">İzmir</option>
+              <option value="Kars">Kars</option>
+              <option value="Kastamonu">Kastamonu</option>
+              <option value="Kayseri">Kayseri</option>
+              <option value="Kırklareli">Kırklareli</option>
+              <option value="Kırşehir">Kırşehir</option>
+              <option value="Kocaeli">Kocaeli</option>
+              <option value="Konya">Konya</option>
+              <option value="Kütahya">Kütahya</option>
+              <option value="Malatya">Malatya</option>
+              <option value="Manisa">Manisa</option>
+              <option value="Kahramanmaraş">Kahramanmaraş</option>
+              <option value="Mardin">Mardin</option>
+              <option value="Muğla">Muğla</option>
+              <option value="Muş">Muş</option>
+              <option value="Nevşehir">Nevşehir</option>
+              <option value="Niğde">Niğde</option>
+              <option value="Ordu">Ordu</option>
+              <option value="Rize">Rize</option>
+              <option value="Sakarya">Sakarya</option>
+              <option value="Samsun">Samsun</option>
+              <option value="Siirt">Siirt</option>
+              <option value="Sinop">Sinop</option>
+              <option value="Sivas">Sivas</option>
+              <option value="Tekirdağ">Tekirdağ</option>
+              <option value="Tokat">Tokat</option>
+              <option value="Trabzon">Trabzon</option>
+              <option value="Tunceli">Tunceli</option>
+              <option value="Şanlıurfa">Şanlıurfa</option>
+              <option value="Uşak">Uşak</option>
+              <option value="Van">Van</option>
+              <option value="Yozgat">Yozgat</option>
+              <option value="Zonguldak">Zonguldak</option>
+              <option value="Aksaray">Aksaray</option>
+              <option value="Bayburt">Bayburt</option>
+              <option value="Karaman">Karaman</option>
+              <option value="Kırıkkale">Kırıkkale</option>
+              <option value="Batman">Batman</option>
+              <option value="Şırnak">Şırnak</option>
+              <option value="Bartın">Bartın</option>
+              <option value="Ardahan">Ardahan</option>
+              <option value="Iğdır">Iğdır</option>
+              <option value="Yalova">Yalova</option>
+              <option value="Karabük">Karabük</option>
+              <option value="Kilis">Kilis</option>
+              <option value="Osmaniye">Osmaniye</option>
+              <option value="Düzce">Düzce</option>
+          </select>
+          <br>
+          <label><font face="Blackoak Std Siyah"><b></b>Adres :</b></font></label>   <textarea name="text" id="adres" cols="30" rows="10"></textarea>
+          <br>
+          <label><font face="Blackoak Std Siyah"><b></b>Uzmanlık Alanı :</b></font></label>   <input type="text"  id="alan">
+          <button type="submit" class="btn btn-primary" id="ekle">Kayıt Ol</button>
+        
+        <table id="liste">
+            <tr>
+              <th>Ad</th>
+              <th>Soyad</th>
+              <th>Yaş</th>
+              <th>Medeni Hal</th>
+              <th>Şehir</th>
+              <th>Adres</th>
+              <th>Alan</th>
+            </tr>
+        </table>
+        </div>
+          
+        
+        <script>
+          const ad=document.querySelector("#ad");
+          const soyad=document.querySelector("#soyad");
+          const yas=document.querySelector("#yas");
+          const medenihal=document.querySelector("#medenihal");
+          const il=document.querySelector("#il");
+          const adres=document.querySelector("#adres");
+          const alan=document.querySelector("#alan");
+          const ekle=document.querySelector("#ekle");//tıklama olayı eklenecek
+          const liste=document.querySelector("#liste");
+        
+          ekle.onclick=function(){
+            //butona tıklanınca çalıştırılacak
+            
+            //td elementlerini oluşturuyoruz
+            let tAd=document.createElement("td");
+            let tSoyad=document.createElement("td");
+            let tYas=document.createElement("td");
+            let tmedenihal=document.createElement("td");
+            let til=document.createElement("td");
+            let tadres=document.createElement("td");
+            let talan=document.createElement("td");
+              
+            tAd.textContent=ad.value;//textboxtan değeri okuyup aktarıyoruz.
+            tSoyad.textContent=soyad.value;//textboxtan değeri okuyup aktarıyoruz.
+            tYas.textContent=yas.value;//textboxtan değeri okuyup aktarıyoruz.
+            tmedenihal.textContent=medenihal.value;//textboxtan değeri okuyup aktarıyoruz.
+            til.textContent=il.value;
+            tadres.textContent=adres.value;
+            talan.textContent=alan.value;
+        
+            if(tYas == 0){
+              alert("Boş giremezsin!");
+        
+              return 0;
+            }
+            
+            //tr elementi oluşturuyoruz
+            let tr=document.createElement("tr");
+        
+            //tdleri tr içine ekliyoruz
+            tr.appendChild(tAd);
+            tr.appendChild(tSoyad);
+            tr.appendChild(tYas);
+            tr.appendChild(tmedenihal);
+            tr.appendChild(til);
+            tr.appendChild(tadres);
+            tr.appendChild(talan);
+            
+        
+            //tr elementini liste (tablo) içine ekliyoruz
+            liste.appendChild(tr);
+            alert("Kayıt alındı!");  
+            //nenelerin için eklemeden sonra temizleyelim
+            ad.value="";
+            soyad.value="";
+            yas.value="";
+            medenihal.value="";
+            il.value="";
+            adres.value="";
+            alan.value="";
+        
+            //temizlemeden sonra ad içine odaklansın
+            ad.focus();
+          }
+        
+        </script>
+        
